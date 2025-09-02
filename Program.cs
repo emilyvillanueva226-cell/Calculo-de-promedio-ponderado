@@ -4,47 +4,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cáculo_de_promedio_ponderado
+namespace ConsoleApp2
 {
     internal class Program
     {
         static void Main(string[] args)
+
         {
-        
-            Console.WriteLine("Ingrese la nota1:");
-            int nota1 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Ingrese la nota2:");
-            int nota2=int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Ingrese la nota3:"); 
-            int nota3= int.Parse(Console.ReadLine());
-
-            
-
-            double promedioponderado;
-            double promedio1;
-            double promedio2;
-            double promedio3;
-
-            
-           
-
-            double peso1 = 27;
-            double peso2 = 13;
-            double peso3 = 60;
-           
-            // calculo
-
-            promedio1 = nota1 * (peso1 / 100);
-            promedio2 = nota2 * (peso2 / 100);
-            promedio3 = nota3 * (peso3 / 100);
-
-            promedioponderado = promedio1 + promedio2 + promedio3;
-
-            Console.WriteLine("El promedio ponderado es:" + promedioponderado); 
+            double nota1, nota2, nota3;
+            double peso1, peso2, peso3;
+            double nP1, nP2, nP3;
+            double promedioFinal;
 
 
+            Console.WriteLine("CALCULADORA DE PROMEDIOS");
+
+            Console.WriteLine("\n Primera nota del estudiante: ");
+            nota1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("\n Ingrese el peso de la primera nota del estudiante: ");
+            peso1 = double.Parse(Console.ReadLine()); 
+            Console.WriteLine("\n Segunda nota del estudiante: ");
+            nota2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("\n Ingrese el peso de la primera nota del estudiante: ");
+            peso2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("\n tercera nota del estudiante: ");
+            nota3 = double.Parse(Console.ReadLine());
+            Console.WriteLine("\n Ingrese el peso de la primera nota del estudiante: ");
+            peso3 = double.Parse(Console.ReadLine());
+
+            nP1 = nota1 * (peso1 / 100);
+            nP2 = nota2 * (peso2 / 100);
+            nP3 = nota3 * (peso3 / 100);
+            promedioFinal = nP1 + nP2 + nP3;
+
+            Console.WriteLine("\n El promedio final es: " + promedioFinal);
 
 
         }
