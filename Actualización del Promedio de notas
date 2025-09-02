@@ -21,15 +21,15 @@ namespace ConsoleApp2
 
             Console.WriteLine("\n Primera nota del estudiante: ");
             nota1 = double.Parse(Console.ReadLine());
-            Console.WriteLine("\n Ingrese el peso de la primera nota del estudiante: ");
+            Console.WriteLine("\n Ingrese el peso % de la primera nota del estudiante: ");
             peso1 = double.Parse(Console.ReadLine()); 
             Console.WriteLine("\n Segunda nota del estudiante: ");
             nota2 = double.Parse(Console.ReadLine());
-            Console.WriteLine("\n Ingrese el peso de la primera nota del estudiante: ");
+            Console.WriteLine("\n Ingrese el peso % de la segunda nota del estudiante: ");
             peso2 = double.Parse(Console.ReadLine());
             Console.WriteLine("\n tercera nota del estudiante: ");
             nota3 = double.Parse(Console.ReadLine());
-            Console.WriteLine("\n Ingrese el peso de la primera nota del estudiante: ");
+            Console.WriteLine("\n Ingrese el peso % de la tercera nota del estudiante: ");
             peso3 = double.Parse(Console.ReadLine());
 
             nP1 = nota1 * (peso1 / 100);
@@ -43,3 +43,4 @@ namespace ConsoleApp2
         }
     }
 }
+
